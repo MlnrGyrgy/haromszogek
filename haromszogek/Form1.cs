@@ -74,5 +74,11 @@ namespace haromszogek
                 MessageBox.Show("Ne szórakozz Zohannal.");
             }     
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lbHaromszogLista.Items.Clear();
+            ofdMegnyitas.ShowDialog();
+        }
     }
 }
