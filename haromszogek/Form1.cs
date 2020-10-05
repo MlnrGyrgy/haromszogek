@@ -12,9 +12,9 @@ namespace haromszogek
 {
     public partial class frmfo : Form
     {
-        private int aOldal;
-        private int bOldal;
-        private int cOldal;
+        private double aOldal;
+        private double bOldal;
+        private double cOldal;
 
         public frmfo()
         {
@@ -34,30 +34,32 @@ namespace haromszogek
         }
         private void btnSzamol_Click(object sender, EventArgs e)
         {
-            aOldal = Convert.ToInt32(tbAoldal.Text);
-            bOldal = Convert.ToInt32(tbBoldal.Text);
-            cOldal = Convert.ToInt32(tbColdal.Text);
-            StringBuilder szoveg = new StringBuilder();
-            szoveg.Append("a: ");
-            szoveg.Append(aOldal.ToString());
-            szoveg.Append("b: ");
-            szoveg.Append(bOldal.ToString());
-            szoveg.Append("c: ");
-            szoveg.Append(cOldal.ToString());
-           
-            if (aOldal == 0 ||bOldal==0||cOldal==0)
+            try
             {
-                MessageBox.Show("Nullánál nagyobb számot adj meg!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else
-            {
-                var h = new haromszog(aOldal, bOldal, cOldal);
-                List<string> adatok = h.AdatokSzoveg();
-                foreach (var a in adatok)
+                aOldal = Convert.ToDouble(tbAoldal.Text);
+                bOldal = Convert.ToDouble(tbBoldal.Text);
+                cOldal = Convert.ToDouble(tbColdal.Text);
+
+                if (aOldal == 0 || bOldal == 0 || cOldal == 0)
                 {
-                    lbHaromszogLista.Items.Add(a);
+                    MessageBox.Show("Nullánál nagyobb számot adj meg!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-                
+                else
+                {
+                    var h = new haromszog (aOldal,bOldal,cOldal);
+                    List<string> adatok = h.AdatokSzoveg();
+                    foreach (var a in adatok)
+                    {
+                        lbHaromszogLista.Items.Add(a);
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Számot adj meg!","Hiba",MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                tbAoldal.Focus();
             }
         }
 
@@ -69,7 +71,7 @@ namespace haromszogek
             }
             else
             {
-                MessageBox.Show("Ne basszad már meg az anyádat.");
+                MessageBox.Show("Ne szórakozz Zohannal.");
             }     
         }
     }
