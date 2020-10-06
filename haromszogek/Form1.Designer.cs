@@ -56,7 +56,7 @@
             // 
             // btnkilepes
             // 
-            this.btnkilepes.Location = new System.Drawing.Point(147, 216);
+            this.btnkilepes.Location = new System.Drawing.Point(147, 253);
             this.btnkilepes.Name = "btnkilepes";
             this.btnkilepes.Size = new System.Drawing.Size(97, 33);
             this.btnkilepes.TabIndex = 7;
@@ -67,7 +67,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 55);
+            this.label2.Location = new System.Drawing.Point(11, 57);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(30, 24);
             this.label2.TabIndex = 1;
@@ -76,7 +76,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 92);
+            this.label3.Location = new System.Drawing.Point(11, 90);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(26, 24);
             this.label3.TabIndex = 2;
@@ -85,7 +85,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 125);
+            this.label4.Location = new System.Drawing.Point(11, 125);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(30, 24);
             this.label4.TabIndex = 3;
@@ -93,21 +93,21 @@
             // 
             // tbAoldal
             // 
-            this.tbAoldal.Location = new System.Drawing.Point(51, 52);
+            this.tbAoldal.Location = new System.Drawing.Point(51, 57);
             this.tbAoldal.Name = "tbAoldal";
             this.tbAoldal.Size = new System.Drawing.Size(100, 29);
             this.tbAoldal.TabIndex = 4;
             // 
             // tbBoldal
             // 
-            this.tbBoldal.Location = new System.Drawing.Point(51, 87);
+            this.tbBoldal.Location = new System.Drawing.Point(51, 92);
             this.tbBoldal.Name = "tbBoldal";
             this.tbBoldal.Size = new System.Drawing.Size(100, 29);
             this.tbBoldal.TabIndex = 5;
             // 
             // tbColdal
             // 
-            this.tbColdal.Location = new System.Drawing.Point(51, 122);
+            this.tbColdal.Location = new System.Drawing.Point(51, 125);
             this.tbColdal.Name = "tbColdal";
             this.tbColdal.Size = new System.Drawing.Size(100, 29);
             this.tbColdal.TabIndex = 6;
@@ -135,23 +135,24 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(5, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(373, 159);
+            this.panel1.Size = new System.Drawing.Size(373, 176);
             this.panel1.TabIndex = 9;
             // 
             // lbHaromszogLista
             // 
+            this.lbHaromszogLista.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbHaromszogLista.FormattingEnabled = true;
-            this.lbHaromszogLista.ItemHeight = 24;
+            this.lbHaromszogLista.ItemHeight = 20;
             this.lbHaromszogLista.Location = new System.Drawing.Point(388, 55);
             this.lbHaromszogLista.Name = "lbHaromszogLista";
-            this.lbHaromszogLista.Size = new System.Drawing.Size(187, 196);
+            this.lbHaromszogLista.Size = new System.Drawing.Size(242, 204);
             this.lbHaromszogLista.TabIndex = 10;
             // 
             // btnTorol
             // 
-            this.btnTorol.Location = new System.Drawing.Point(447, 7);
+            this.btnTorol.Location = new System.Drawing.Point(472, 12);
             this.btnTorol.Name = "btnTorol";
-            this.btnTorol.Size = new System.Drawing.Size(83, 29);
+            this.btnTorol.Size = new System.Drawing.Size(83, 31);
             this.btnTorol.TabIndex = 11;
             this.btnTorol.Text = "Törlés";
             this.btnTorol.UseVisualStyleBackColor = true;
@@ -159,7 +160,7 @@
             // 
             // btnFajlbol
             // 
-            this.btnFajlbol.Location = new System.Drawing.Point(147, 177);
+            this.btnFajlbol.Location = new System.Drawing.Point(147, 214);
             this.btnFajlbol.Name = "btnFajlbol";
             this.btnFajlbol.Size = new System.Drawing.Size(97, 33);
             this.btnFajlbol.TabIndex = 9;
@@ -177,7 +178,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(586, 261);
+            this.ClientSize = new System.Drawing.Size(642, 298);
             this.Controls.Add(this.btnFajlbol);
             this.Controls.Add(this.btnTorol);
             this.Controls.Add(this.lbHaromszogLista);
